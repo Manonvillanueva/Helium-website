@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(246, 246, 246);
+  font-family: "Inter", verdana;
+}
+
+body {
+  height: 100vh;
+  background: rgb(27, 27, 27);
+}
+
+/* ******************** NAV****************** */
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 19px;
+}
+
+.navRight ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navRight a:hover {
+  color: #474dff;
+}
+
+/* ******************* MAIN ******************* */
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+h2 {
+  font-size: 80px;
+  text-transform: capitalize;
+}
+
+.mainLeft {
+  display: flex;
+  align-items: center;
+}
+
+.mainLeft p:first-of-type {
+  color: #474dff;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.mainLeft p:nth-of-type(2) {
+  font-size: 13px;
+}
+
+.mainRight img {
+  width: 100%;
+}
+
+/* *****************FOOTER***************** */
+footer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background: black;
+  border-radius: 10px;
+  min-height: 160px;
+}
+
+footer h3 {
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.footerLeft ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 160px;
+}
+
+.footerLeft li {
+  background-color: #474dff;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 170px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footerRight ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150px;
+}
+
+.footerRight img {
+  height: 60px;
+}
+
+/* ?*******************MEDIA QUERIES****************** */
+
+@media screen and (max-width: 840px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .mainLeft p:first-of-type {
+    font-size: 18px;
+  }
+
+  .footerRight img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav {
+    grid-template-columns: 40% 60%;
+  }
+
+  .navRight a {
+    font-size: 13px;
+  }
+
+  main {
+    display: block;
+  }
+
+  footer {
+    display: block;
+  }
+
+  .footerLeft ul {
+    align-items: center;
+  }
+}
