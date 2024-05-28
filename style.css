@@ -13,6 +13,7 @@
 body {
   height: 100vh;
   background: rgb(27, 27, 27);
+  cursor: none;
 }
 
 /* ******************** NAV****************** */
@@ -30,6 +31,10 @@ h1 {
 .navRight ul {
   display: flex;
   justify-content: space-between;
+}
+
+.navRight li {
+  z-index: 5;
 }
 
 .navRight a:hover {
@@ -110,29 +115,37 @@ footer h3 {
 /* ********************JS************************** */
 .cursor {
   position: absolute;
-  background: rgba(255, 255, 0, 0.745);
+  background: #474dff;
   height: 10px;
   width: 10px;
   border-radius: 50%;
   z-index: 4;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
 
 .mouseMove {
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.575);
-  height: 40px;
-  width: 40px;
+  background-color: white;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   z-index: 3;
+  transform: translate(-50%, -50%);
+  transition: 0.05s;
+  mix-blend-mode: difference;
 }
 
 .mouseMoveBefore {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.365);
-  height: 80px;
-  width: 80px;
+  background-color: rgb(41, 41, 41);
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   z-index: 2;
+  transform: translate(-50%, -50%);
+  transition: 0.12s;
+  mix-blend-mode: difference;
 }
 
 /* *******************MEDIA QUERIES****************** */
@@ -170,5 +183,15 @@ footer h3 {
 
   .footerLeft ul {
     align-items: center;
+  }
+
+  .mouseMove {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mouseMoveBefore {
+    width: 100px;
+    height: 100px;
   }
 }
