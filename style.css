@@ -107,7 +107,35 @@ footer h3 {
   height: 60px;
 }
 
-/* ?*******************MEDIA QUERIES****************** */
+/* ********************JS************************** */
+.cursor {
+  position: absolute;
+  background: rgba(255, 255, 0, 0.745);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.mouseMove {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.575);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.mouseMoveBefore {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.365);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* *******************MEDIA QUERIES****************** */
 
 @media screen and (max-width: 840px) {
   h2 {
